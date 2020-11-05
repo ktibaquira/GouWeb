@@ -1,0 +1,192 @@
+html{
+    box-sizing: border-box;
+}
+*,*:before,*:after{
+    box-sizing: inherit;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Verdana, Geneva, serif;
+}
+header{
+    text-align: center;  
+}
+.logo img{
+    margin-top: 30px;
+    width: 15%;
+    
+}
+.navegacion{
+    background-color:#353535;
+}
+nav{
+    width: 600px;
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+    padding-top: 20px;
+}
+nav ul{
+    list-style: none;
+}
+nav > ul > li{
+    float: left;
+}
+nav ul::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+nav ul li a{
+    display: inline-block;
+    width: 200px;
+    color: #ffffff;
+    text-decoration: none;
+    text-align: center;
+    padding: 20px;
+}
+nav ul li a:hover{
+    background-color: #fe4918;
+}
+/*SEGUNDO NIVEL*/
+nav ul ul {
+    position: absolute;
+    top:100%;
+    background-color:   rgba(255, 103, 1, 0.534);
+    display: none;
+}
+nav ul li:hover >ul{
+    display: block;
+}
+nav ul li:hover{
+    background-color:  rgba(255, 103, 1, 0.534);
+}
+.margen{
+    margin-top: 50px;
+    margin-left: 300px;
+    margin-right: 300px;
+    padding-bottom: 100px;
+}
+.titulo{
+    text-align: center;
+    padding: 15px;
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: 30px;
+    color: #fe4918;
+    border: #fe4918;
+}
+.contenido{
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+.boton{
+    font-size: 20px;
+    background-color:#fe4918;
+}
+.boton:hover{
+    background-color:  rgb(228, 130, 65);;
+}
+.a{
+    margin-left: 350px;
+}
+
+footer {
+    background-color: #353535;
+    padding-top: 40px;
+    margin-top: 20px;
+}
+
+footer .contenedor>div {
+    color: #ffffff;
+    padding: 0px 20px;
+    font-size: 12px;
+    text-align: justify;
+}
+/* responsive */
+@media only screen and (min-width:768px) {
+    footer .contenedor>div {
+        width: 33.3%;
+        float: left;
+    }
+}
+/* color letra footer*/
+footer h3 {
+    color: #ffffff;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    margin-bottom: 20px;
+}
+
+/* Encargado de colocar el color naranja en las palabras del footer*/
+footer h3 span {
+    color: #fe4918;
+}
+
+footer .ultimos-tweets li {
+    margin-bottom: 10px;
+}
+
+footer nav.redes-sociales {
+    text-align: left;
+}
+
+/* HOVER RED SOCIAL FACEBOOK */
+footer nav.redes-sociales .fa-facebook-f{
+    transition: all .2s ease-in;
+}
+footer nav.redes-sociales .fa-facebook-f:hover{
+  color: #fe4918;
+}
+
+/* HOVER RED SOCIAL TWITTER */
+footer nav.redes-sociales .fa-twitter{
+    transition: all .2s ease-in;
+}
+
+footer nav.redes-sociales .fa-twitter:hover{
+    color: #fe4918;
+}
+
+/*HOVER RED SOCIAL INSTAGRAM*/
+footer nav.redes-sociales .fa-instagram{
+    transition: all .2s ease-in;
+}
+
+footer nav.redes-sociales .fa-instagram:hover{
+    color: #fe4918;
+}
+
+/* COPY RIGHT */
+p.copyright {
+    margin: 20px 0 0 0;
+    background-color: #2e2e2e;
+    color: #ffffff;
+    padding: 10px 0;
+    text-align: center;
+}
+   
+/*
+   * Clearfix: contain floats
+   *
+   * For modern browsers
+   * 1. The space content is one way to avoid an Opera bug when the
+   *    `contenteditable` attribute is included anywhere else in the document.
+   *    Otherwise it causes space to appear at the top and bottom of elements
+   *    that receive the `clearfix` class.
+   * 2. The use of `table` rather than `block` is only necessary if using
+   *    `:before` to contain the top-margins of child elements.
+   */
+
+   .clearfix::before, .clearfix::after {
+    content: " ";
+    display: table;
+}
+
+.clearfix::after {
+    clear: both;
+}
